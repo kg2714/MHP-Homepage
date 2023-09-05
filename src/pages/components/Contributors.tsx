@@ -34,7 +34,7 @@ const ContributorLogo = (props: { imgSrc: string; name: string }) => {
 function Contributors() {
   return (
     <Box mx={10} my={8}>
-      <Text>Built with ❤️ by</Text>
+      <Text fontSize={18}>Built with ❤️ by</Text>
       <Center>
         <Stack
           direction={{

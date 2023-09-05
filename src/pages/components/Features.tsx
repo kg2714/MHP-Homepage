@@ -1,17 +1,13 @@
 import {
   Box,
   Text,
-  Stack,
-  HStack,
   Center,
-  Badge,
   Heading,
   Flex,
   Image,
   Wrap,
   useColorModeValue,
 } from "@chakra-ui/react"
-import React from "react"
 
 const FeatureBox = ({
   featureName,
@@ -62,10 +58,10 @@ const FeatureBox = ({
 const Features = () => {
   return (
     <>
-      <Text ml={10} my={8}>
+      <Text ml={10} my={8} fontSize={18}>
         Features
       </Text>
-      <Center>
+      <Center my={4}>
         <Wrap spacing="3em" justify="center">
           <Center>
             <FeatureBox

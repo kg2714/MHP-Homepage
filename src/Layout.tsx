@@ -31,6 +31,7 @@ const Layout = () => {
         justify={"space-between"}
         px={10}
         w="full"
+        zIndex={9999}
       >
         <Text>
           <Link to="/">Logo</Link>
