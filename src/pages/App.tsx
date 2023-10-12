@@ -1,10 +1,10 @@
-import React from "react"
-import AppIntroduction from "./components/AppIntroduction"
+import React from "react";
+import AppIntroduction from "./components/AppIntroduction";
 
-import { Box } from "@chakra-ui/react"
-import Contributors from "./components/Contributors"
-import Features from "./components/Features"
-import ContactUs from "./components/ContactUs"
+import { Box } from "@chakra-ui/react";
+import Contributors from "./components/Contributors";
+import Features from "./components/Features";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Features />
       <ContactUs />
     </Box>
-  )
+  );
 }
 
-export default App
+export default App;

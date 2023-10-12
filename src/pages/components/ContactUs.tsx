@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Box,
   Text,
@@ -7,7 +7,7 @@ import {
   Textarea,
   Heading,
   Input,
-} from "@chakra-ui/react"
+} from "@chakra-ui/react";
 
 const ContactUs = () => {
   return (
@@ -24,7 +24,7 @@ const ContactUs = () => {
         <Textarea placeholder="Feedback" />
       </Flex>
     </Center>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;
