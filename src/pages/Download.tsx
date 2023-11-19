@@ -1,23 +1,23 @@
-import React from "react"
+import React from "react";
 import {
   Box,
   Text,
   Flex,
   Center,
   useColorModeValue,
-  Image,
   Button,
   Heading,
   Stack,
   Wrap,
-} from "@chakra-ui/react"
-import styled from "@emotion/styled"
+  Link,
+} from "@chakra-ui/react";
+import styled from "@emotion/styled";
 
 export default function Download() {
-  const bgColor = useColorModeValue("#9a999e3e", "#2e2e2e8f")
+  const bgColor = useColorModeValue("#9a999e3e", "#2e2e2e8f");
   const In = styled.a`
     color: ${useColorModeValue("#0d731fff", "#14e3a87a")};
-  `
+  `;
 
   return (
     <Center>
@@ -41,7 +41,7 @@ export default function Download() {
           >
             <Heading>Windows 10, 11 64-bit</Heading>
             <Text my="24px">
-              It's recommended that you need to install or update latest version
+              It is recommended that you need to install or update latest version
               of Microsoft Visual C++ and Microsoft .NET Framework.
             </Text>
             <Wrap spacing={"16px"} my={"24px"}>
@@ -66,7 +66,7 @@ export default function Download() {
             <Text mt={"24px"}>
               You can build it from{" "}
               <In href="https://github.com/kg2714/MHP-Homepage">source</In> or
-              download the AppImage/Installer file below.
+              simply download the AppImage/Installer file provided below.
             </Text>
             <Wrap spacing={"16px"} my={"24px"}>
               <Button>Download AppImage</Button>
@@ -81,5 +81,5 @@ export default function Download() {
         </Stack>
       </Flex>
     </Center>
-  )
+  );
 }

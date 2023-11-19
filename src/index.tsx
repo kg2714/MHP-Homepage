@@ -21,6 +21,7 @@ const MainWeb = () => {
               <Route path="*" element={<NotFound />} />
               <Route path="/download" element={<Download />} />
             </Route>
+
           </Routes>
         </BrowserRouter>
       </ChakraProvider>

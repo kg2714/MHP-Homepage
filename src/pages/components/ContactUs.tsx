@@ -7,27 +7,30 @@ import {
   Textarea,
   Heading,
   Input,
-<<<<<<< HEAD
-} from "@chakra-ui/react";
-=======
   Spacer,
   Stack,
   useColorModeValue,
+  VStack,
 } from "@chakra-ui/react"
->>>>>>> 14c65b3608019aa981edd1c878bbf07d530efee1
 
 const ContactUs = () => {
   return (
     <Stack
       mx={10}
-      my={5}
+      my={8}
       direction={{
         base: "column",
         md: "row",
       }}
     >
       <Center>
-        <Heading>Any concerns?</Heading>
+        <VStack align={"start"}>
+          <Heading>Any concerns?</Heading>
+          <Text maxWidth={{
+            md: "580px",
+            base: "full"
+          }}>If you have any inquiries or suggestions regarding our products, please feel free to ask and provide detailed information to assist us in enhancing your experience.</Text>
+        </VStack>
       </Center>
       <Spacer />
       <Stack
@@ -40,7 +43,7 @@ const ContactUs = () => {
         }}
         spacing={5}
       >
-        <Text>Contact us</Text>
+        
         <Input
           placeholder="Email"
           variant={"flushed"}
@@ -51,27 +54,14 @@ const ContactUs = () => {
             base: "full",
           }}
         />
-<<<<<<< HEAD
-        <Textarea placeholder="Feedback" />
-      </Flex>
-    </Center>
-  );
-};
-=======
-        <Textarea
-          placeholder="Feedback"
-          height={{
-            md: "280px",
-            base: "180px",
-          }}
+        <Textarea placeholder="Feedback" 
+          height={"250px"}
           resize={"none"}
-          outline={"none"}
-          focusBorderColor="#9e7faa"
         />
       </Stack>
+      
     </Stack>
   )
 }
->>>>>>> 14c65b3608019aa981edd1c878bbf07d530efee1
 
 export default ContactUs;
